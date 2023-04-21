@@ -77,21 +77,21 @@ btn_mo2000 = tk.Button(frm_params, text="2000", font=('Arial',14), command=lambd
 btn_mo5000 = tk.Button(frm_params, text="5000", font=('Arial',14), command=lambda *args: update_var("entry_money_value",5000))
 btn_mo7500 = tk.Button(frm_params, text="7500", font=('Arial',14), command=lambda *args: update_var("entry_money_value",7500)) 
 
-label_loss = tk.Label(frm_params, text="Percentuale stoploss %:", font=('Arial',12)) #0,90 0,95 ecc
+label_loss = tk.Label(frm_params, text="Moltiplicatore stoploss:", font=('Arial',12)) #0,90 0,95 ecc
 entry_loss = tk.Entry(frm_params)
 entry_loss.insert(0, settings["entry_loss_value"])
-btn_lo088 = tk.Button(frm_params, text="0.88%", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.88))
-btn_lo090 = tk.Button(frm_params, text="0.90%", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.90))
-btn_lo092 = tk.Button(frm_params, text="0.92%", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.92))
-btn_lo095 = tk.Button(frm_params, text="0.95%", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.95))
+btn_lo088 = tk.Button(frm_params, text="0.88", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.88))
+btn_lo090 = tk.Button(frm_params, text="0.90", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.90))
+btn_lo092 = tk.Button(frm_params, text="0.92", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.92))
+btn_lo095 = tk.Button(frm_params, text="0.95", font=('Arial',14), command=lambda *args: update_var("entry_loss_value",0.95))
 
-label_gain = tk.Label(frm_params, text="Percentuale takeprofit %:", font=('Arial',12)) # 1,05 1,10 1,15 ecc
+label_gain = tk.Label(frm_params, text="Moltiplicatore takeprofit:", font=('Arial',12)) # 1,05 1,10 1,15 ecc
 entry_gain = tk.Entry(frm_params)
 entry_gain.insert(0, settings["entry_gain_value"])
-btn_ga118 = tk.Button(frm_params, text="1.18%", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.18))
-btn_ga120 = tk.Button(frm_params, text="1.20%", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.20))
-btn_ga122 = tk.Button(frm_params, text="1.22%", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.22))
-btn_ga125 = tk.Button(frm_params, text="1.25%", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.25))
+btn_ga118 = tk.Button(frm_params, text="1.18", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.18))
+btn_ga120 = tk.Button(frm_params, text="1.20", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.20))
+btn_ga122 = tk.Button(frm_params, text="1.22", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.22))
+btn_ga125 = tk.Button(frm_params, text="1.25", font=('Arial',14), command=lambda *args: update_var("entry_gain_value",1.25))
 
 label_money.grid(row=0, column=0, sticky="e", padx=5, pady=5)
 entry_money.grid(row=0, column=1, sticky="e", padx=5, pady=5)
